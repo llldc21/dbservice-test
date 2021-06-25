@@ -1,0 +1,15 @@
+version: "3"
+services:
+  psql:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: test
+
+  mongodb:
+    image: mongo
+    ports:
+        - 27017:27017
